@@ -1,21 +1,21 @@
+import React from "react";
 import "@styles/globals.css";
-import { Children } from "react";
 
 export const metadata = {
   title: "Promptopia",
   description: "Discover and share AI Prompts",
 };
 
-const Rootlayout = () => {
+const Rootlayout = ({ children }) => {
   return (
-    <htm Lang="en">
+    <html lang="en">
       <body>
         <div className="main">
           <div className="gradient" />
         </div>
-        <main className="app">{Children}</main>
+        <main className="app">{children}</main>
       </body>
-    </htm>
+    </html>
   );
 };
 
